@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+class Solution {
+public:
+    void countOdds(int low, int high) {
+        int i,count = 0;
+        for(i = low ; i <= high; i++){
+            if(i%2 != 0){
+                count += 1;
+            }
+        }
+        cout<<count<<endl;
+     }
+};
+int main(){
+    int low,high;
+    cin>>low;
+    cin>>high;
+
+    Solution sol;
+    sol.countOdds(low , high);
+}
